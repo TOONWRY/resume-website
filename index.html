@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teerapong Resume</title>
+</head>
+
+<style>
+    :root {
+        --color-primary: #db75d6;
+        --color-secondary: #dc9ddc;
+        --white: #fff;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        color: var(--color-primary);
+    }
+
+    .container {
+        height: 100vh;
+        background: var(--white);
+    }
+
+    .text-gradient {
+        background: #FFFFFF;
+        background: linear-gradient(to top left, #FFFFFF 8%, #F0F0F0 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .section-profile {
+        width: 100%;
+        height: 90px;
+        background-color: var(--color-primary);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .avatar {
+        border-radius: 100px;
+        height: 60px;
+        width: 60px;
+        object-fit: cover;
+    }
+
+    .profile {
+        position: absolute;
+        bottom: -35px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .profile-detail {
+        align-self: end;
+    }
+
+    .profile-subtitle {
+        font-size: 10px;
+        color: var(--color-secondary);
+    }
+
+    .text-animate {
+        color: var(--white);
+    }
+
+    .text-animate:after {
+        content: "";
+        animation: spin 10s infinite;
+    }
+    
+    @keyframes spin {
+      0% { content:"Hi, I am Data engineer "; }
+      100% { content:"I am TOON "; }
+    }
+
+    .section-content {
+        width: 900px;
+        margin: auto;
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px
+    }
+
+    .content-span-2 {
+        grid-column: 1 / span 2;
+    }
+
+    .content-title {
+        color: var(--white);
+        background-color: var(--color-primary);
+        font-size: 14px;
+        width: fit-content;
+        padding: 5px;
+    }
+
+    .content-detail {
+        margin-top: 6px;
+        padding: 5px 0;
+    }
+</style>
+
+<body>
+    <main class="container">
+        <section class="section-profile">
+            <div class="">
+                <h1 class="text-animate"></h1>
+            </div>
+
+            <div class="profile">
+                <img 
+                    src="./image/profile_image.jpg"
+                    class="avatar" 
+                />
+
+                <div class="profile-detail">     
+                    <h3 class="profile-title">
+                        Wiriya Kudkeaw
+                    </h3>
+                    <p class="profile-subtitle">
+                        cartoonwry@gmail.com
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-content">
+            <div class="content-detail">
+                <p class="content-title">DETAILS</p>
+
+                <div class="content-detail">
+                    <div class="">Age: 22</div>
+                    <div class="">Gender: Female</div>
+                    <div class="">Bangkok, Thailand</div>
+                    <div class="">
+                        Bachelor of Science Program in Mathematics with Computer Science, King Mongkut's University of Technology North Bangkok (KMUTNB)
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-detail">
+                <p class="content-title">CONTACT</p>
+
+                <div class="content-detail">
+                    <div class="" >
+                        Email: 
+                        <a 
+                            href="mailto:cartoonwry@gmail.com"
+                        >
+                            cartoonwry@gmail.com
+                        </a>
+                    </div>
+                    
+                    <div class="" >
+                        Github: 
+                        <a 
+                            href="https://github.com/TOONWRY"
+                            target="_blank"
+                        >
+                        https://github.com/TOONWRY
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-detail content-span-2">
+                <p class="content-title">PROFILE</p>
+
+                <div class="content-detail">
+                    <div class="">
+                        - Skilled with ReactJS, NuxtJS, Responseive CSS, HTML and JavaScript.
+                    </div>
+                    <div class="">
+                        - Fast learning and hard working.
+                    </div>
+                    <div class="">
+                        - Energetic and responsible.
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-detail content-span-2">
+                <p class="content-title">SKILLS</p>
+
+                <div class="content-detail">
+                    <div>- HTML and CSS</div>
+                    <div>- JavaScript and TypeScript</div>
+                    <div>- ReactJS, VueJS, Nuxt 3</div>
+                    <div>- SQL</div>
+                    <div>- MongoDB, Redis, and MariaDB</div>
+                </div>
+            </div>
+
+            <div class="content-detail content-span-2">
+                <p class="content-title">EXPRERIENCE</p>
+
+                <div class="content-detail">
+                    <div>- Student intent at Clicknext clicknext co. ltd (Fullstack Web developer)</div>
+                    <div>- Omnifood landingpage (HTML, CSS, JS)</div>
+                    <div>- Bank application (ReactJS, Bootstrap, MongoDB)</div>
+                    <div>- Mobile store POS with C#</div>
+                    <div>- Air booking POS with C#</div>
+                    <div>- Audit company management web application (SA)</div>
+                </div>
+            </div>
+ 
+        </section>
+    </div>
+</body>
+</html>
